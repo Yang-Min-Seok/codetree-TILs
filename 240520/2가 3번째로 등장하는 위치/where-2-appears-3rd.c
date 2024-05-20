@@ -14,11 +14,12 @@ int main() {
     // scan
     int twoCnt = 0;
     for (int i = 0; i < n; i++) {
-        if (twoCnt == 3) {
-            printf("%d", i);
-            break;
-        } else if (intList[i] == 2) {
+        if (intList[i] == 2) {
             twoCnt++;
+        }
+        if (twoCnt == 3) {
+            printf("%d", i + 1);
+            break;
         }
     }
 
