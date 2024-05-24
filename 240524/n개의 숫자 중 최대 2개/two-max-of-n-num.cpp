@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 int main() {
     
@@ -11,7 +12,8 @@ int main() {
         std::cin >> array[i];
     }
 
-    int max_max = array[0], max_min = array[0];
+    int max_max = std::numeric_limits<int>::min();
+    int max_min = std::numeric_limits<int>::min();
     int max_idx = 0;
 
     for (int i = 1; i < n; i++) {
