@@ -16,14 +16,14 @@ int main() {
     int max_min = std::numeric_limits<int>::min();
     int max_idx = 0;
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         if (array[i] > max_max) {
             max_max = array[i];
             max_idx = i;
         }
     }
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         if (array[i] > max_min && max_idx != i) {
             max_min = array[i];
         }
