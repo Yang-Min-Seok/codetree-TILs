@@ -9,7 +9,7 @@ int main() {
     }
 
     int curr_num = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < m; i++) {
         if (i % 2) {
             for (int j = n-1; j >= 0; j--) {
                 rect[j][i] = curr_num;
